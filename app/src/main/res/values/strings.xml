@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Quizella</string>
+    <string name="quizella_logo">Quizella Logo</string>
+    <string name="quizella_moto">Take a quiz, test your intelligence</string>
+    <string name="play">PLAY!</string>
+    <string name="best_of_all_time">Best of all time</string>
+    <string name="exit_app">Exit App</string>
+    <string name="game_over">Game Over!</string>
+    <string name="please_select_an_answer">Please select an answer.</string>
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="share">Share</string>
+    <string name="home">Home</string>
+    <string name="restart">Restart</string>
+    <string name="score">Score:</string>
+</resources>
