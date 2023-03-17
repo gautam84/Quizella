@@ -29,10 +29,7 @@ class QuestionViewModel @Inject constructor(
 
     init {
 
-        Log.d("TAG", "init...")
-
         viewModelScope.launch {
-            questionsRepository.clearQuestions()
             questionsRepository.getQuestions().collect {
                 _questionsList.value = questionsList.value.copy(
                     list = it.toMutableList()

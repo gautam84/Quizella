@@ -8,7 +8,7 @@ data class QuestionState(
         category = "",
         id = "",
         correctAnswer = "",
-        incorrectAnswers = listOf(),
+        answers = listOf(),
         tags = listOf(),
         question = "",
         type = "",

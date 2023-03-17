@@ -73,7 +73,7 @@ fun QuestionScreen(
                         category = currQuestion.currQuestion?.category!!,
                         id = currQuestion.currQuestion?.id!!,
                         correctAnswer = currQuestion.currQuestion?.correctAnswer!!,
-                        incorrectAnswers = currQuestion.currQuestion?.incorrectAnswers!!,
+                        answers = currQuestion.currQuestion?.answers!!,
                         tags = currQuestion.currQuestion?.tags!!,
                         question = currQuestion.currQuestion?.question!!,
                         type = currQuestion.currQuestion?.type!!,
@@ -160,8 +160,8 @@ fun QuestionCard(
             contentPadding = PaddingValues(0.dp, 24.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            val answers = question.incorrectAnswers + question.correctAnswer
-            items(answers) {
+
+            items(question.answers) {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
