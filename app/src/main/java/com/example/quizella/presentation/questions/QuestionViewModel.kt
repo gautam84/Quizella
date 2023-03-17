@@ -70,6 +70,28 @@ class QuestionViewModel @Inject constructor(
                             isEnabled = true,
                             currAns = ""
                         )
+                        if(_currQuestionState.value.questionNo == 21){
+                            event.navHostController.navigate(Screen.FinishScreen.route) {
+                                popUpTo(event.navHostController.graph.findStartDestination().id) {
+                                    inclusive = true
+                                }
+                            }
+                            viewModelScope.launch {
+                                _questionsList.value = questionsList.value.copy(
+                                    tempPoints = _currQuestionState.value.questionNo!! - 1
+                                )
+                                viewModelScope.launch {
+                                    scoreRepository.setTempPoints(_currQuestionState.value.questionNo!! - 1)
+                                    scoreRepository.getTempPoints.collect { temporaryPoints ->
+                                        scoreRepository.getPoints.collect { points ->
+                                            if (points < temporaryPoints) {
+                                                scoreRepository.setPoints(temporaryPoints)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     } else {
                         event.navHostController.navigate(Screen.FinishScreen.route) {
                             popUpTo(event.navHostController.graph.findStartDestination().id) {
