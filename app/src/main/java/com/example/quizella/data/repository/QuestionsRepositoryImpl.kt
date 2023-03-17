@@ -13,8 +13,6 @@ class QuestionsRepositoryImpl(
 
     override suspend fun getQuestions(): Flow<List<Question>> {
 
-
-
         triviaService.getQuestions().forEach {
             dao.insertQuestion(
                 Question(
