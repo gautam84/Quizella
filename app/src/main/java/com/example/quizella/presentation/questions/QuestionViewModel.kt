@@ -48,7 +48,8 @@ class QuestionViewModel @Inject constructor(
         }
     }
 
-
+    private val _dialogState = mutableStateOf(DialogState())
+    val dialogState: State<DialogState> = _dialogState
 
 
     fun onEvent(event: QuestionEvent) {
@@ -120,6 +121,17 @@ class QuestionViewModel @Inject constructor(
             is QuestionEvent.ChangeAnswer -> {
                 _currQuestionState.value = currQuestionState.value.copy(
                     currAns = event.ans
+                )
+            }
+
+            is QuestionEvent.OpenDialog -> {
+                _dialogState.value = dialogState.value.copy(
+                    state = true
+                )
+            }
+            is QuestionEvent.CloseDialog -> {
+                _dialogState.value = dialogState.value.copy(
+                    state = false
                 )
             }
         }

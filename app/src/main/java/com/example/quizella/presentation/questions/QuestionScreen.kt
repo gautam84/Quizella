@@ -1,7 +1,9 @@
 package com.example.quizella.presentation.questions
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.widget.Toast
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -37,9 +39,13 @@ fun QuestionScreen(
 ) {
     val currQuestion by viewModel.currQuestionState
     val context = LocalContext.current
+    val activity = (LocalContext.current as? Activity)
 
 
 
+    BackHandler {
+        viewModel.onEvent(QuestionEvent.OpenDialog)
+    }
 
     Column(
         modifier = Modifier
@@ -52,7 +58,11 @@ fun QuestionScreen(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.End
         ) {
-            IconButton(onClick = { /*TODO*/ }) {
+            IconButton(onClick = {
+
+                viewModel.onEvent(QuestionEvent.OpenDialog)
+
+            }) {
                 Icon(
                     imageVector = Icons.Outlined.Logout,
                     contentDescription = stringResource(R.string.exit_app)
@@ -60,6 +70,41 @@ fun QuestionScreen(
             }
         }
         Spacer(modifier = Modifier.height(32.dp))
+
+        if (viewModel.dialogState.value.state) {
+            AlertDialog(
+                onDismissRequest = {
+                    viewModel.onEvent(QuestionEvent.CloseDialog)
+                },
+                buttons = {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        horizontalArrangement = Arrangement.End
+                    ) {
+                        Button(
+                            onClick = {
+
+                                activity?.finish()
+
+                            },
+                            colors = ButtonDefaults.buttonColors(
+                                backgroundColor = Color(0xFF243D25)
+                            )
+                        ) {
+                            Text(
+                                text = "Yes!",
+                                color = Color.White
+                            )
+                        }
+                    }
+                },
+                text = {
+                    Text(text = viewModel.dialogState.value.text)
+                })
+        }
+
 
         Column(
             modifier = Modifier
