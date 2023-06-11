@@ -40,6 +40,7 @@ Main | Questions | Finish
     consistently, and transactionally.
 - [Ktor-client](https://medium.com/google-developer-experts/how-to-use-ktor-client-on-android-dcdeddc066b9) - Ktor includes a multiplatform asynchronous HTTP       client, which allows you to make requests and handle responses, extend its functionality with plugins, such as authentication, JSON serialization, and so on.
 - [Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android) - Hilt is a dependency injection library for Android that reduces the     boilerplate of doing manual dependency injection in your project. Doing manual dependency injection requires you to construct every class and its                 dependencies by hand, and to use containers to reuse and manage dependencies.
+- [Room](https://developer.android.com/training/data-storage/room) - The Room persistence library provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite.
 - [Material Components for Android](https://github.com/material-components/material-components-android)
   - Modular and customizable Material Design UI components for Android.
 - [Figma](https://figma.com/) - Figma is a vector graphics editor and prototyping tool which is
