@@ -1,12 +1,12 @@
-![GitHub Cards Preview](https://github.com/gautam84/Foodike/blob/master/art/FoodikeIntrouctionMockUp.jpg?raw=true)
+![GitHub Cards Preview](https://github.com/gautam84/Quizella/blob/master/art/QuizellaMockUp.jpg?raw=true)
 
-# 🍔 Foodike
-Foodike is a simple, easy-to-use food delivery app. It is built using Android-Jetpack Compose and is built on the principle of MVVM with Modern Android Architecture Components.
+# 🧠 Quizella
+A quiz app based on MVVM architecture pattern to test your intelligence. Built using Android-Jetpack Compose and Ktor-client to retrieve data from server.
 
 ## Screenshots 📱 
-Onboarding | Login | Home | Details | History | Cart | Profile
---- | --- | --- | --- |--- |--- |--- 
-![](https://github.com/gautam84/Foodike/blob/master/screenshots/onboarding.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/login.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/home.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/details.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/history.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/cart.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/profile.jpeg) 
+Main | Questions | Finish 
+--- | --- | --- 
+![](https://github.com/gautam84/Quizella/blob/master/screenshots/main.jpeg) | ![](https://github.com/gautam84/Quizella/blob/master/screenshots/questions.jpeg) | ![](https://github.com/gautam84/Quizella/blob/master/screenshots/finish.jpeg) 
 
 
 ## Build With 🛠
