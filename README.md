@@ -6,7 +6,7 @@ A quiz app based on MVVM architecture pattern to test your intelligence. Built u
 ## Screenshots 📱 
 Main | Questions | Finish 
 --- | --- | --- 
-![](https://github.com/gautam84/Foodike/blob/master/screenshots/main.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/questions.jpeg) | ![](https://github.com/gautam84/Foodike/blob/master/screenshots/finish.jpeg) 
+![](https://github.com/gautam84/Quizella/blob/master/screenshots/main.jpeg) | ![](https://github.com/gautam84/Quizella/blob/master/screenshots/questions.jpeg) | ![](https://github.com/gautam84/Quizella/blob/master/screenshots/finish.jpeg) 
 
 
 ## Build With 🛠
