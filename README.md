@@ -45,6 +45,10 @@ Main | Questions | Finish
   - Modular and customizable Material Design UI components for Android.
 - [Figma](https://figma.com/) - Figma is a vector graphics editor and prototyping tool which is
   primarily web-based.
+  
+  
+## Back-end 🛰️
+The app uses ktor-client to retrieve data from [The Trivia API](https://the-trivia-api.com/). For more information, read the [documentation](https://the-trivia-api.com/docs/v2/).
 
 ## Architecture 🗼
 
