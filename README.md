@@ -38,6 +38,8 @@ Main | Questions | Finish
     DataStore is a data storage solution that allows you to store key-value pairs or typed objects
     with protocol buffers. DataStore uses Kotlin coroutines and Flow to store data asynchronously,
     consistently, and transactionally.
+- [Ktor-client](https://medium.com/google-developer-experts/how-to-use-ktor-client-on-android-dcdeddc066b9)
+  Ktor includes a multiplatform asynchronous HTTP client, which allows you to make requests and handle responses, extend its functionality with plugins, such as     authentication, JSON serialization, and so on.
 - [Material Components for Android](https://github.com/material-components/material-components-android)
   - Modular and customizable Material Design UI components for Android.
 - [Figma](https://figma.com/) - Figma is a vector graphics editor and prototyping tool which is
